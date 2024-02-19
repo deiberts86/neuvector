@@ -1,4 +1,5 @@
 # NeuVector Install with ISTIO Integration
+
 Requirements:
 - kubectl
 - helm
@@ -455,5 +456,5 @@ spec:
           weight: 100
 ```
 ---
-# Troubleshooting
-[ISTIO.IO Troubleshooting](https://istio.io/latest/docs/ops/common-problems/)
+
+![This looks neat](/images/Screenshot%202024-02-19%20at%206.09.27%20PM.png)
