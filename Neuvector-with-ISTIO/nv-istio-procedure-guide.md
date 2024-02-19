@@ -3,6 +3,7 @@ Requirements:
 - kubectl
 - helm
 - active RKE2 or K3s kubernetes cluster with sufficient resources
+- Rancher MCM with Rancher Charts Enabled
 
 ## Pre-seed Namespaces
 
