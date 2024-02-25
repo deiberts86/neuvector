@@ -217,7 +217,7 @@ tracing:
 ## Install Rancher NeuVector Chart (Manager HTTPS disabled)
 - Current user supplied values:
 - paste this in your values.yaml section within Rancher MCM UI for Neuvector or build your own values.yaml file and apply through CLI with Helm.
-- This is for SSL Termination at the Edge of ISTIO
+- This is for SSL Termination at the Edge of ISTIO (Recommended)
 
 ```yaml
 controller:
@@ -270,6 +270,19 @@ k3s:
 manager:
   env:
     ssl: false
+    envs:
+    - name: CUSTOM_PAGE_HEADER_COLOR
+      value: '#007a33'
+    - name: CUSTOM_PAGE_HEADER_CONTENT
+      value: VS8vRk9VTwo=
+    - name: CUSTOM_PAGE_FOOTER_COLOR
+      value: '#007a33'
+    - name: CUSTOM_PAGE_FOOTER_CONTENT
+      value: VS8vRk9VTwo=
+    - name: CUSTOM_LOGIN_LOGO
+      value: # YOUR BASE64'ed .SVG logo here!
+    - name: CUSTOM_EULA_POLICY
+      value: # YOUR BASE64'ed EULA Banner Here!
   runAsUser: 1000
   svc:
     type: ClusterIP
