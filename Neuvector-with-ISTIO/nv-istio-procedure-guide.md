@@ -248,7 +248,8 @@ cve:
     runAsUser: 1000
   updater:
     podAnnotations:
-      traffic.sidecar.istio.io/excludeOutboundIPRanges: "*"
+      #traffic.sidecar.istio.io/excludeOutboundIPRanges: "*"
+      sidecar.istio.io/inject: 'false'
     runAsUser: 1000
 docker:
   enabled: false
@@ -274,11 +275,11 @@ manager:
     - name: CUSTOM_PAGE_HEADER_COLOR
       value: '#007a33'
     - name: CUSTOM_PAGE_HEADER_CONTENT
-      value: VS8vRk9VTwo=
+      value: Y2xlYXJlZAo=
     - name: CUSTOM_PAGE_FOOTER_COLOR
       value: '#007a33'
     - name: CUSTOM_PAGE_FOOTER_CONTENT
-      value: VS8vRk9VTwo=
+      value: Y2xlYXJlZAo=
     - name: CUSTOM_LOGIN_LOGO
       value: # YOUR BASE64'ed .SVG logo here!
     - name: CUSTOM_EULA_POLICY
