@@ -249,7 +249,7 @@ cve:
   updater:
     podAnnotations:
       #traffic.sidecar.istio.io/excludeOutboundIPRanges: "*"
-      sidecar.istio.io/inject: 'false'
+      sidecar.istio.io/inject: 'false' #disable injection for job
     runAsUser: 1000
 docker:
   enabled: false
@@ -315,7 +315,7 @@ cve:
     runAsUser: 1000
   updater:
     podAnnotations:
-      traffic.sidecar.istio.io/excludeOutboundIPRanges: '*'
+      sidecar.istio.io/inject: "false"
     runAsUser: 1000
 docker:
   enabled: false
